@@ -1,0 +1,72 @@
+*{margin:0;padding:0;}
+body{font:12px "microsoft yahei";}	
+ul,li,dd,dt{list-style:none;}
+em,i{font-style:normal;}
+img{border:0;}
+.clear{clear:both;}
+a{text-decoration:none;}
+/*头部*/
+.jmw_logo_bg{height:74px;background:#f7fcff}
+.jmw_logo{width:980px;margin:0 auto;}
+.jmw_header_bg{height:93px;background:url(http://img0.egou.com/0/club/jm/images/jmw_top.jpg) repeat-x left top;}
+.jmw_header{width:980px;height:93px;margin:0 auto;}
+.jmw_header .header_nav{height:40px;}
+.jmw_header .header_nav ul{float:left;}
+.jmw_header .header_nav li{width:110px;height:45px;overflow:hidden;float:left;z-index:9;position:relative;padding:0 5px 0 0;margin-top:-5px;}
+.jmw_header .header_nav li a{width:104px;height:42px;display:block;float:left;font-size:18px;color:#666;text-align:center;line-height:42px;padding:3px;}
+.jmw_header .jmw_name {height:42px;_height:32px;color:#333;line-height:42px;padding:0 0 0 20px;_padding:10px 0 0 20px;float:left;}
+.jmw_header .jmw_name a{color:#333}
+.jmw_header .jmw_name a:hover{color:#f60;text-decoration:underline;}
+.jmw_header .header_nav li a:hover,.jmw_header .header_nav li a.hover{background:#327fc7;border:3px solid #fca001;color:#fff;border-bottom:none;padding:0;}
+.jmw_header .header_serch_bg{height:37px;padding:14px 0 0;}
+.hangye_left{width:124px;height:25px;display:inline;margin:0 10px 0 0;float:left;}
+.hangye_left .select_one{width:122px;height:23px;line-height:23px;font-family:"microsoft yahei";border:1px solid #d4d4d6}
+.hangye_left .select_one option{height:23px;line-height:23px;}
+.serch_right{width:437px;height:23px;float:left;position:relative;border:1px solid #d4d4d6;background:#fff;}
+.serch_right .seach_text{width:350px;height:23px;line-height:23px;border:0;float:left;font-family:"microsoft yahei";outline:none;background:#fff;padding:0 5px;}	
+.serch_right .seach_botton{width:77px;height:23px;cursor:pointer;position:absolute;top:0;right:0;border:0;background:url(http://img0.egou.com/0/club/jm/images/jmw_bg.gif) no-repeat left -125px;}
+/* 广告  */
+.jmw_top_Advert{width:980px;height:90px;overflow:hidden;margin:20px auto;}
+.jmw_top_Advert img{width:980px;height:90px;}
+/* 分类  */
+.jmw_nav_bg{width:980px;height:493px;margin:0 auto 50px;background:#e0f1f8;}
+.jmw_nav_bg li a{color:#fff;text-decoration:none;}
+.jmw_nav_bg li a:hover{color:#fff;text-decoration:underline;}
+.jmw_nav_bg li{width:316px;height:113px;float:left;padding:2px;margin:5px 0 0 5px;}
+.jmw_nav_bg li.bg_color1{background:#a9cfe6;}
+.jmw_nav_bg li.bg_color0{background:#ffa83b;}
+.jmw_nav_bg li.bg_color1 .nav_info{width:314px;height:111px;border:1px dotted #c1dff2;}
+.jmw_nav_bg li.bg_color0 .nav_info{width:314px;height:111px;border:1px dotted #ffc479;}
+.jmw_nav_bg li .list_info{width:230px;float:left;padding:3px 0 0;}
+.li_icon1,.li_icon2,.li_icon3,.li_icon4,.li_icon5,.li_icon6,.li_icon7,.li_icon8,.li_icon9,.li_icon10,.li_icon11,.li_icon12{width:36px;height:36px;float:left;display:inline;margin:12px 10px 0 12px;background:url(http://img0.egou.com/0/club/jm/images/jmw_bg.gif) no-repeat left top;}
+.jmw_nav_bg li .li_icon1{background-position:left top;}
+.jmw_nav_bg li .li_icon2{background-position:-40px top;}
+.jmw_nav_bg li .li_icon3{background-position:-80px top;}
+.jmw_nav_bg li .li_icon4{background-position:-120px top;}
+.jmw_nav_bg li .li_icon5{background-position:-160px top;}
+.jmw_nav_bg li .li_icon6{background-position:left -40px;}
+.jmw_nav_bg li .li_icon7{background-position:-40px -40px;}
+.jmw_nav_bg li .li_icon8{background-position:-80px -40px;}
+.jmw_nav_bg li .li_icon9{background-position:-120px -40px;}
+.jmw_nav_bg li .li_icon10{background-position:-160px -40px;}
+.jmw_nav_bg li .li_icon11{background-position:left -80px;}
+.jmw_nav_bg li .li_icon12{background-position:-40px -80px;}
+.jmw_nav_bg li .list_info .name{height:30px;line-height:30px;font-weight:bold;font-size:14px;}
+.jmw_nav_bg li .list_info .leibie{height:24px;font-size:14px;line-height:24px;}
+.jmw_nav_bg li .list_info .leibie a{display:inline-block;margin:0 10px 0 0;}
+.jmw_bottom_bg{height:auto !important;min-height:100px;height:100px;text-align:center;line-height:22px;color:#666;padding:20px 0 0;background:url(http://img0.egou.com/0/club/jm/images/jmw_bj.jpg) repeat left top;border-top:2px solid #d0d8df;}
+.english{font-family:Tahoma;}
+/*弹层*/
+.jmw_layer{width:477px;height:288px;background:#327fc7;padding:0 0 0 20px;margin:0 auto;position:relative;}
+.jmw_layer .layer_close{width:24px;height:24px;position:absolute;top:17px;right:17px;}
+.jmw_layer .layer_close a{width:24px;height:24px;display:block;cursor:pointer;background:url(http://img0.egou.com/0/club/jm/images/jmw_close.jpg) no-repeat left top}
+.jmw_layer_name{ height:55px; font-size:24px; color:#fff; font-style:italic; line-height:55px;}
+.layer_yes{width:86px;height:32px;margin:10px auto 0;}
+.layer_yes a{width:86px;height:32px;display:block;text-align:center;line-height:32px;color:#666;cursor:pointer;background:#fff;}
+.layer_yes a:hover{color:#666;}
+.jmw_layer_nr{padding:0 0 0 20px; font-size:14px; color:#fff; line-height:26px;}
+.jmw_layer_nr .number{ width:16px; height:16px; background:#fff; border-radius:10px; font-size:16px; font-family:Arial; line-height:16px; text-align:center; display:inline-block; color:#327fc7;}
+.jmw_layer_nr .liucheng{width:388px; height:25px; line-height:24px; font-size:14px; color:#327fc7; background:url(http://img0.egou.com/0/club/jm/images/layer_nr.jpg) repeat left top; margin:20px 0 15px;}
+.jmw_layer_nr .liucheng .padding_left28{padding-left:28px; padding-right:43px;}
+.jmw_layer_nr .liucheng .padding_left45{padding-left:45px; padding-right:45px;}
+.margin_top15{margin-top:15px;}

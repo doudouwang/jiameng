@@ -1,0 +1,1 @@
+document->html(<a href="http://www.egou.com/club/qiandao/qiandao.htm?id=1200" target="_blank"><img src="/images/qiandao.jpg"></a>);
