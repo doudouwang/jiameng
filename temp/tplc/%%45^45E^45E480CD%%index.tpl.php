@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-05-26 10:33:44
+<?php /* Smarty version 2.6.26, created on 2014-05-27 22:06:04
          compiled from index.tpl */ ?>
 <?php if ($this->_tpl_vars['notice_1'] != ""): ?>
 <div style="z-index:99999;top:30%;position:fixed;left:0;right:0;_left:24%;_right:0;_position:absolute;_bottom:0;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
@@ -51,10 +51,10 @@ unset($_smarty_tpl_vars);
  ?>
 				</div>
 			</li><?php endforeach; endif; unset($_from); ?></ul>
+</div>
 <?php if (! $this->_tpl_vars['forbiden_ip']): ?>
 <div style="margin-left: auto;margin-right: auto;width:950px;"><p>&nbsp</p>
 	<script type="text/javascript">/*960*90，创建于2014-5-17*/
 	var cpro_id = "u1559303";</script>
 	<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-</div><?php endif; ?>
-</div>
+</div><?php endif; ?>

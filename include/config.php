@@ -15,42 +15,40 @@ $config['upload_url'] = "http://img.jm.com/";
 $config['upload_path'] = "/home/www/jm_upload/";
 
 $config['key'] = "0HC3udb9Hr760CQyh6nzp363ailF4n";
-$config['ad'][0]="<script language=\"javascript\" type=\"text/javascript\">
-			yigao_width = 336;
-			yigao_height = 280;
-			yigao_sid = \"cd2553293f76c503\";
-			yigao_msid = \"aa24b1e9962dabca\";
-			yigao_uid = 79904;
-			yigao_zid = 144214;
-			yigao_pid = 15;
-			yigao_type = 1;
-			yigao_adamount = 1;
-			yigao_cols = 1;
-		</script><script language=\"javascript\" src=\"http://monitor.yigao.com/info.js\"></script>";
-$config['ad'][1]="<script language=\"javascript\" type=\"text/javascript\">
-			yigao_width = 336;
-			yigao_height = 280;
-			yigao_sid = \"f9588a25bb712acc\";
-			yigao_msid = \"b5167e0102854a93\";
-			yigao_uid = 79904;
-			yigao_zid = 144213;
-			yigao_pid = 15;
-			yigao_type = 1;
-			yigao_adamount = 1;
-			yigao_cols = 1;
-		</script><script language=\"javascript\" src=\"http://monitor.yigao.com/info.js\"></script>";
-$config['ad'][2]="<script language=\"javascript\" type=\"text/javascript\">
-			yigao_width = 336;
-			yigao_height = 280;
-			yigao_sid = \"4eb34aa10b445d84\";
-			yigao_msid = \"e8d456c1e9b2066a\";
-			yigao_uid = 79904;
-			yigao_zid = 144125;
-			yigao_pid = 15;
-			yigao_type = 1;
-			yigao_adamount = 1;
-			yigao_cols = 1;
-		</script><script language=\"javascript\" src=\"http://monitor.yigao.com/info.js\"></script>";
+$config['ad'][0]="<script type=\"text/javascript\"><!--
+		google_ad_client = \"ca-pub-6512828621594229\";
+		/* 中国加盟网 优质用户 用户是寻找加盟项目的投资者 全站通发336&#42;280，1 */
+		google_ad_slot = \"6992638990\";
+		google_ad_width = 336;
+		google_ad_height = 280;
+		//-->
+		</script>
+		<script type=\"text/javascript\"
+		src=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">
+		</script>";
+$config['ad'][1]="<script type=\"text/javascript\"><!--
+		google_ad_client = \"ca-pub-6512828621594229\";
+		/* 中国加盟网 优质用户 用户是寻找加盟项目的投资者 全站通发336&#42;280，2 */
+		google_ad_slot = \"8469372191\";
+		google_ad_width = 336;
+		google_ad_height = 280;
+		//-->
+		</script>
+		<script type=\"text/javascript\"
+		src=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">
+		</script>";
+$config['ad'][2]="<script type=\"text/javascript\"><!--
+		google_ad_client = \"ca-pub-6512828621594229\";
+		/* 中国加盟网 优质用户 用户是寻找加盟项目的投资者 全站通发336&#42;280，3 */
+		google_ad_slot = \"9946105391\";
+		google_ad_width = 336;
+		google_ad_height = 280;
+		//-->
+		</script>
+		<script type=\"text/javascript\"
+		src=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">
+		</script>";
+
 $config['index'][0]="<script language=\"javascript\" type=\"text/javascript\">
 			yigao_width = 960;
 			yigao_height = 90;
