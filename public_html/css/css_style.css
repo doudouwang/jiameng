@@ -29,7 +29,7 @@ a{text-decoration:none;}
 .jmw_top_Advert{width:980px;height:90px;overflow:hidden;margin:20px auto;}
 .jmw_top_Advert img{width:980px;height:90px;}
 /* 分类  */
-.jmw_nav_bg{width:980px;height:493px;margin:0 auto 50px;background:#e0f1f8;}
+.jmw_nav_bg{width:980px;margin:0 auto 50px;background:#e0f1f8;}
 .jmw_nav_bg li a{color:#fff;text-decoration:none;}
 .jmw_nav_bg li a:hover{color:#fff;text-decoration:underline;}
 .jmw_nav_bg li{width:316px;height:113px;float:left;padding:2px;margin:5px 0 0 5px;}

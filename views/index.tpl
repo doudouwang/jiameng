@@ -39,10 +39,10 @@ var cpro_id = "u1556393";
 					<{include file="sub_cat_item.tpl"}>
 				</div>
 			</li><{/foreach}></ul>
+</div>
 <{if !$forbiden_ip}>
 <div style="margin-left: auto;margin-right: auto;width:950px;"><p>&nbsp</p>
 	<script type="text/javascript">/*960*90，创建于2014-5-17*/
 	var cpro_id = "u1559303";</script>
 	<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
 </div><{/if}>
-</div>
