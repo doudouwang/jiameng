@@ -80,8 +80,10 @@
     <td bgcolor="#ffffff">-</td>
     <td colspan="2" rowspan="6" width="350" bgcolor="#ffffff" style="padding:0 0 0 1px;">
     <{if !$forbiden_ip}>
-    <div class="about_cs_pic"><{$ad2}>
-		<p id="a2" align="center" <{$style}> class="about_cs_qd"></p></div><{$onload}><{/if}></td>
+    <div class="about_cs_pic"><{$ad2}><p id="a2" align="center" <{$style}> class="about_cs_qd"></p></div>
+    <{/if}>
+    <{$onload}>
+    </td>
     </tr>
   <tr>
     <td bgcolor="#fafafa">加盟区域： </td>
