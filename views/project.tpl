@@ -31,17 +31,17 @@
     	<div class="about_top"><{$info.company}>基本投资<{$info.invest}>成立时间<{$info.found}>注册资本<{$info.register_capital}>门店总数<{$info.shops}>经营模式<{$info.mode}> ; <{$info.group}>;公司地址<{$info.address}></div>
     </div>
  </div>
- <{if !$forbiden_ip}>
+ 
 <div class="about_br_bg">
 	<div class="about_bg">
 		<div class="about_nameone" >赞助商广告</div>
         <div class="about_pic">
-        	<div class="pic_left"><{$ad0}><p id="a0" align="center" <{$style}> class="about_cs_qd"></p></div>
-            <div class="pic_right"><{$ad1}><p id="a1" align="center" <{$style}> class="about_cs_qd"></p></div>
+        	<div class="pic_left"><{if !$forbiden_ip}><{$ad0}><{/if}><p id="a0" align="center" <{$style}> class="about_cs_qd"></p></div>
+            <div class="pic_right"><{if !$forbiden_ip}><{$ad1}><{/if}><p id="a1" align="center" <{$style}> class="about_cs_qd"></p></div>
         </div>
     </div>
 </div>
-<{/if}>
+
 <div class="about_name"><{$info.name}>参数</div>
 <div class="about_cs_nr">
 <table width="760" border="0" cellspacing="1" cellpadding="0" bgcolor="#ebebeb">
@@ -79,9 +79,7 @@
     <td bgcolor="#fafafa">商务备案： </td>
     <td bgcolor="#ffffff">-</td>
     <td colspan="2" rowspan="6" width="350" bgcolor="#ffffff" style="padding:0 0 0 1px;">
-    <{if !$forbiden_ip}>
-    <div class="about_cs_pic"><{$ad2}><p id="a2" align="center" <{$style}> class="about_cs_qd"></p></div>
-    <{/if}>
+    <div class="about_cs_pic"><{if !$forbiden_ip}><{$ad2}><{/if}><p id="a2" align="center" <{$style}> class="about_cs_qd"></p></div>
     <{$onload}>
     </td>
     </tr>
