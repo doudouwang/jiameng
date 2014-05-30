@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-05-26 14:55:24
+<?php /* Smarty version 2.6.26, created on 2014-05-30 13:58:04
          compiled from project.tpl */ ?>
 <!--面包屑导航-->
 <div class="jm_39" style="border-bottom: #cecece 1px solid; ">
@@ -43,21 +43,21 @@
 </div>
     </div>
  </div>
- <?php if (! $this->_tpl_vars['forbiden_ip']): ?>
+ 
 <div class="about_br_bg">
 	<div class="about_bg">
 		<div class="about_nameone" >赞助商广告</div>
         <div class="about_pic">
-        	<div class="pic_left"><?php echo $this->_tpl_vars['ad0']; ?>
-<p id="a0" align="center" <?php echo $this->_tpl_vars['style']; ?>
+        	<div class="pic_left"><?php if (! $this->_tpl_vars['forbiden_ip']): ?><?php echo $this->_tpl_vars['ad0']; ?>
+<?php endif; ?><p id="a0" align="center" <?php echo $this->_tpl_vars['style']; ?>
  class="about_cs_qd"></p></div>
-            <div class="pic_right"><?php echo $this->_tpl_vars['ad1']; ?>
-<p id="a1" align="center" <?php echo $this->_tpl_vars['style']; ?>
+            <div class="pic_right"><?php if (! $this->_tpl_vars['forbiden_ip']): ?><?php echo $this->_tpl_vars['ad1']; ?>
+<?php endif; ?><p id="a1" align="center" <?php echo $this->_tpl_vars['style']; ?>
  class="about_cs_qd"></p></div>
         </div>
     </div>
 </div>
-<?php endif; ?>
+
 <div class="about_name"><?php echo $this->_tpl_vars['info']['name']; ?>
 参数</div>
 <div class="about_cs_nr">
@@ -105,12 +105,12 @@
     <td bgcolor="#fafafa">商务备案： </td>
     <td bgcolor="#ffffff">-</td>
     <td colspan="2" rowspan="6" width="350" bgcolor="#ffffff" style="padding:0 0 0 1px;">
-    <?php if (! $this->_tpl_vars['forbiden_ip']): ?>
-    <div class="about_cs_pic"><?php echo $this->_tpl_vars['ad2']; ?>
+    <div class="about_cs_pic"><?php if (! $this->_tpl_vars['forbiden_ip']): ?><?php echo $this->_tpl_vars['ad2']; ?>
+<?php endif; ?><p id="a2" align="center" <?php echo $this->_tpl_vars['style']; ?>
+ class="about_cs_qd"></p></div>
+    <?php echo $this->_tpl_vars['onload']; ?>
 
-		<p id="a2" align="center" <?php echo $this->_tpl_vars['style']; ?>
- class="about_cs_qd"></p></div><?php echo $this->_tpl_vars['onload']; ?>
-<?php endif; ?></td>
+    </td>
     </tr>
   <tr>
     <td bgcolor="#fafafa">加盟区域： </td>

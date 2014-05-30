@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-05-27 22:06:04
+<?php /* Smarty version 2.6.26, created on 2014-05-30 13:57:39
          compiled from index.tpl */ ?>
 <?php if ($this->_tpl_vars['notice_1'] != ""): ?>
 <div style="z-index:99999;top:30%;position:fixed;left:0;right:0;_left:24%;_right:0;_position:absolute;_bottom:0;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
