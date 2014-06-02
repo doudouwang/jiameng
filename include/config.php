@@ -37,7 +37,13 @@ $config['ad'][1]="<script type=\"text/javascript\"><!--
 		<script type=\"text/javascript\"
 		src=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">
 		</script>";
-$config['ad'][2]="<script type=\"text/javascript\"><!--
+$config['ad'][2]="<script type=\"text/javascript\">
+		/*336*280，创建于2014-6-2*/
+		var cpro_id = \"u1575327\";
+		</script>
+		<script src=\"http://cpro.baidustatic.com/cpro/ui/c.js\" type=\"text/javascript\">
+		</script>";
+$config['ad'][3]="<script type=\"text/javascript\"><!--
 		google_ad_client = \"ca-pub-6512828621594229\";
 		/* 中国加盟网 优质用户 用户是寻找加盟项目的投资者 全站通发336&#42;280，3 */
 		google_ad_slot = \"9946105391\";
