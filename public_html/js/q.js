@@ -55,7 +55,7 @@ $("#submit").find("input").click(function(){
 				console.log(result.c);
 				console.log(result.cc);
 			}else{
-				jm.open(result.r,'_blank');
+				window.location = result.r;
 			}
 		},
 		error : function(xhr, ts, et) {

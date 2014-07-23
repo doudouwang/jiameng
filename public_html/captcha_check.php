@@ -6,7 +6,7 @@
 	$hid = $_SESSION['hid'];
 	$key = $_SESSION['key'];
 	$error = json_encode(array('r'=>'error','c'=>$captcha,'cc'=>$code));
-	$success = json_encode(array('r'=>'http://www.egou.com/club/qiandao/qiandao.htm?hid='.$hid."&key=".$key));
+	$success = json_encode(array('r'=>'http://www.egou.com/club/qiandao/qiandao.htm?hid='.$hid."&k=".$key));
 	if (empty($code) || empty($captcha) || $code != $captcha) {
 		echo $error;
 	} else {
