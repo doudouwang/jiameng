@@ -17,16 +17,20 @@ jm.open = jm.open || function(url, target) {
 	//}
 };
 var show = false;
-function show_qian(a){
+function show_qian1(a){
 	var $q = $('#a'+a);
 	var $a = $('<a>');
 	var h =getCookie('h');
 	var k=getCookie('k1');
 	var url = "http://www.egou.com/club/qiandao/qiandao.htm?hid="+h+"&k="+k;
-	$a.html("<img src='/images/backgroud.jpg' width='75' height='20'>");
+	$a.html("<img src='/images/backgroud.jpg'>");
 	$q.append($a);
 	$a.attr('onClick',"jm.open('"+url+"','_blank');");
 	$a.attr('href','javascript:void(0);');
+	show = true;
+}
+function show_qian(a){
+	var $q = $('#a'+a);
 	show = true;
 }
 function getCookie(name){

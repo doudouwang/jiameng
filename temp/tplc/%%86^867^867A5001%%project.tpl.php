@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-05-30 13:58:04
+<?php /* Smarty version 2.6.26, created on 2014-07-23 18:25:34
          compiled from project.tpl */ ?>
 <!--面包屑导航-->
 <div class="jm_39" style="border-bottom: #cecece 1px solid; ">
@@ -49,11 +49,17 @@
 		<div class="about_nameone" >赞助商广告</div>
         <div class="about_pic">
         	<div class="pic_left"><?php if (! $this->_tpl_vars['forbiden_ip']): ?><?php echo $this->_tpl_vars['ad0']; ?>
-<?php endif; ?><p id="a0" align="center" <?php echo $this->_tpl_vars['style']; ?>
- class="about_cs_qd"></p></div>
+<?php endif; ?><?php if ($this->_tpl_vars['qdindex'] == 0): ?><?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "qiandao.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?><?php endif; ?></div>
             <div class="pic_right"><?php if (! $this->_tpl_vars['forbiden_ip']): ?><?php echo $this->_tpl_vars['ad1']; ?>
-<?php endif; ?><p id="a1" align="center" <?php echo $this->_tpl_vars['style']; ?>
- class="about_cs_qd"></p></div>
+<?php endif; ?><?php if ($this->_tpl_vars['qdindex'] == 1): ?><?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "qiandao.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?><?php endif; ?></div>
         </div>
     </div>
 </div>
@@ -106,8 +112,11 @@
     <td bgcolor="#ffffff">-</td>
     <td colspan="2" rowspan="6" width="350" bgcolor="#ffffff" style="padding:0 0 0 1px;">
     <div class="about_cs_pic"><?php if (! $this->_tpl_vars['forbiden_ip']): ?><?php echo $this->_tpl_vars['ad2']; ?>
-<?php endif; ?><p id="a2" align="center" <?php echo $this->_tpl_vars['style']; ?>
- class="about_cs_qd"></p></div>
+<?php endif; ?><?php if ($this->_tpl_vars['qdindex'] == 2): ?><?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "qiandao.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?><?php endif; ?></div>
     <?php echo $this->_tpl_vars['onload']; ?>
 
     </td>
@@ -306,5 +315,52 @@ unset($_smarty_tpl_vars);
   </div>
   <div style="clear:both"></div>
 </div>
-<img style="width:1px;height:1px;" src="http://rac.qutu.com/s.gif<?php echo $this->_tpl_vars['s']; ?>
-"/>
+<script type="text/javascript">
+	var show = false;
+	var showTimerId = setTimeout($('#qdcode').show(),5000);
+	window.onload=function(){
+		clearTimeout(showTimerId);
+		if(!show){
+			$('#qdcode').show();
+		}
+	};
+	$("#qd").toggle(function(){
+		$("#captcha").animate({left:75},300);
+		$("#code").animate({left:175},400);
+		$("#submit").animate({left:225},500);
+	},function(){
+		$("#captcha").animate({left:0},500);
+		$("#code").animate({left:0},400);
+		$("#submit").animate({left:0},300);
+	});
+	$("#captcha").click(function(){
+		$("#captcha").find("img").attr("src","/captcha.php");
+	});
+	$("#code").find("input").keydown(function(e){
+		if(e.keyCode==13){
+			$("#submit").find("input").click();
+		}
+	});  
+	$("#submit").find("input").click(function(){
+		var params = {};
+		params.code = $("#code").find("input").val();
+		$.ajax({
+			url : "/captcha_check.php",
+			dataType : "json",
+			timeout : 1000,
+			data:params,
+			success : function(result) {
+				if(result.r=="error"){
+					$("#captcha").click();
+					console.log(result.c);
+					console.log(result.cc);
+				}else{
+					window.location = result.r;
+				}
+			},
+			error : function(xhr, ts, et) {
+				xhr = null;
+			}
+		});
+	});
+</script>

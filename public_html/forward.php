@@ -1,4 +1,5 @@
 <?php
+session_start();
 //if(isset($_GET['hid'])&isset($_GET['uid'])&isset($_SERVER['HTTP_REFERER'])){
 if(isset($_GET['hid'])&isset($_GET['uid'])){
 	//header(sprintf("Location: %s", "http://www.zhenyoua.com"));
@@ -8,8 +9,9 @@ if(isset($_GET['hid'])&isset($_GET['uid'])){
 	$hid = $_GET['hid'];
 	
 	//if(strpos($_SERVER['HTTP_REFERER'],'www.egou.com')){
-		setcookie("u",$uid,time()+3600,"/","www.zhenyoua.com",0);
-		setcookie("h",$hid,time()+3600,"/","www.zhenyoua.com",0);
+		$_SESSION['uid'] = $uid;
+		$_SESSION['hid'] = $hid;
+		$_SESSION['step'] = 'forward';
 		echo "<script>window.location =\"$url\";</script>";
 		//echo "<a id='rr' href='$url' style='display:none;'></a><script>document.getElementById('rr').click();</script>";
 	//}

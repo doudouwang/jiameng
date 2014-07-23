@@ -1,13 +1,13 @@
 <?php
 $config['mysql'] = array(
-    'host' => '122.49.1.34',
+    'host' => '202.85.215.47',
     'user' => 'duxin',
     'pass' => 'Danawa1234',
     'name' => 'jiameng',
 );
 
 $config['sphinx'] = array(
-    	'host'  => '122.49.1.34',
+    	'host'  => '202.85.215.47',
     	'port'  =>  9312
 );
 

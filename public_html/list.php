@@ -1,17 +1,9 @@
 <?php
+session_start();
 require_once('inc.php');
 //判断来源
-//if(isset($_COOKIE["h"])&isset($_COOKIE["u"])&isset($_COOKIE["k"])&isset($_SERVER['HTTP_REFERER'])){
-if(isset($_COOKIE["h"])&isset($_COOKIE["u"])&isset($_COOKIE["k"])){
-	$u = $_COOKIE["u"];
-	$h = $_COOKIE["h"];
-	$k = $_COOKIE["k"];
-	$key = md5("index".strtoupper($u).strtoupper($h).date('Y-m-d').config_item('key'));
-	//if($k==$key&strpos($_SERVER['HTTP_REFERER'],'www.zhenyoua.com')){
-	if($k==$key){
-		$k = md5("list".strtoupper($u).strtoupper($h).date('Y-m-d').config_item('key'));
-		setcookie("k",$k,time()+3600,"/project/",config_item('domain'),0);
-	}
+if(isset($_SESSION['step']) & strpos($_SESSION['step'],'orward_index')){
+	$_SESSION['step'] = 'forward_index_list';
 }
 $query_string = $_SERVER['QUERY_STRING'];
 $request_uri = $_SERVER['REQUEST_URI'];
