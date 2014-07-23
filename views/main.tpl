@@ -10,7 +10,6 @@
 <link rel="stylesheet" rev="stylesheet" href="<{$img_domain}>/css/css_style.css" type="text/css"/>
 <script type="text/javascript" src="<{$img_domain}>/js/jquery.js"></script>
 <script type="text/javascript" src="<{$img_domain}>/js/jquery.plugins.js"></script>
-<script type="text/javascript" src="/js/q.js"></script>
 <!--公用文件-->
 <script type='text/javascript' src='http://js.adm.cnzz.net/js/abase.js'></script>
 <link rel="shortcut icon" href="/favicon.ico" />

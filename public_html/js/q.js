@@ -17,22 +17,52 @@ jm.open = jm.open || function(url, target) {
 	//}
 };
 var show = false;
-function show_qian1(a){
-	var $q = $('#a'+a);
-	var $a = $('<a>');
-	var h =getCookie('h');
-	var k=getCookie('k1');
-	var url = "http://www.egou.com/club/qiandao/qiandao.htm?hid="+h+"&k="+k;
-	$a.html("<img src='/images/backgroud.jpg'>");
-	$q.append($a);
-	$a.attr('onClick',"jm.open('"+url+"','_blank');");
-	$a.attr('href','javascript:void(0);');
-	show = true;
-}
-function show_qian(a){
-	var $q = $('#a'+a);
-	show = true;
-}
+var showTimerId = setTimeout($('#qdcode').show(),5000);
+window.onload=function(){
+	clearTimeout(showTimerId);
+	if(!show){
+		$('#qdcode').show();
+	}
+};
+$("#qd").toggle(function(){
+	$("#captcha").animate({left:75},300);
+	$("#code").animate({left:175},400);
+	$("#submit").animate({left:225},500);
+},function(){
+	$("#captcha").animate({left:0},500);
+	$("#code").animate({left:0},400);
+	$("#submit").animate({left:0},300);
+});
+$("#captcha").click(function(){
+	$("#captcha").find("img").attr("src","/captcha.php");
+});
+$("#code").find("input").keydown(function(e){
+	if(e.keyCode==13){
+		$("#submit").find("input").click();
+	}
+});  
+$("#submit").find("input").click(function(){
+	var params = {};
+	params.code = $("#code").find("input").val();
+	$.ajax({
+		url : "/captcha_check.php",
+		dataType : "json",
+		timeout : 1000,
+		data:params,
+		success : function(result) {
+			if(result.r=="error"){
+				$("#captcha").click();
+				console.log(result.c);
+				console.log(result.cc);
+			}else{
+				jm.open(result.r,'_blank');
+			}
+		},
+		error : function(xhr, ts, et) {
+			xhr = null;
+		}
+	});
+});
 function getCookie(name){
    var arrStr = document.cookie.split("; ");
    for(var i = 0;i < arrStr.length;i ++){
