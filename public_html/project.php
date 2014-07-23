@@ -22,14 +22,14 @@ $smarty->assign('images', $images);
 $smarty->assign('info', $info);
 $smarty->assign('nav', $nav);
 $smarty->assign('tpl', 'project');
-
+$qdindex = -1;
 if(isset($_SESSION['step']) & strpos($_SESSION['step'],'orward_index_list')){
 	$_SESSION['step'] = 'forward_index_list_project';
 	$t=rand(1,3);
 	$qdindex=$t%3;
 	$_SESSION["key"] = md5(strtoupper($_SESSION["uid"]).strtoupper($_SESSION["hid"]).date('Y-m-d').config_item('key'));
-	$smarty->assign('qdindex', $qdindex);
 }
+$smarty->assign('qdindex', $qdindex);
 $ad=config_item('ad');
 $smarty->assign('ad0', $ad[$t%3]);
 $smarty->assign('ad1', $ad[($t+1)%3]);
