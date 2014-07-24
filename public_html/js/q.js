@@ -32,6 +32,7 @@ $("#qd").toggle(function(){
 	$("#captcha").animate({left:0},500);
 	$("#code").animate({left:0},400);
 	$("#submit").animate({left:0},300);
+	$("#codemsg").animate({left:0},700);
 });
 $("#captcha").click(function(){
 	$("#captcha").find("img").attr("src","/captcha.php");
@@ -40,7 +41,7 @@ $("#code").find("input").keydown(function(e){
 	if(e.keyCode==13){
 		$("#submit").find("input").click();
 	}
-});  
+});
 $("#submit").find("input").click(function(){
 	var params = {};
 	params.code = $("#code").find("input").val();
@@ -52,6 +53,10 @@ $("#submit").find("input").click(function(){
 		success : function(result) {
 			if(result.r=="error"){
 				$("#captcha").click();
+				$("#code").find("input").val('');
+				$("#codemsg").html('验证码错误!');
+				$("#codemsg").animate({left:255},700);
+				$("#codemsg").delay(1000).animate({left:0},700);
 				console.log(result.c);
 				console.log(result.cc);
 			}else{
