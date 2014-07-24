@@ -11,11 +11,10 @@
 		echo $error;
 	} else {
 		echo $success;
+		unset($_SESSION['step']);
+		unset($_SESSION['uid']);
+		unset($_SESSION['hid']);
+		unset($_SESSION['key']);
+		unset($_SESSION['captcha']);
 	}
-
-	unset($_SESSION['step']);
-	unset($_SESSION['uid']);
-	unset($_SESSION['hid']);
-	unset($_SESSION['key']);
-    unset($_SESSION['captcha']);
 ?>
