@@ -35,7 +35,7 @@ $("#qd").toggle(function(){
 	$("#codemsg").animate({left:0},700);
 });
 $("#captcha").click(function(){
-	$("#captcha").find("img").attr("src","/captcha.php");
+	$("#captcha").find("img").attr("src","/captcha.php?v="+new Date().getTime());
 });
 $("#code").find("input").keydown(function(e){
 	if(e.keyCode==13){
