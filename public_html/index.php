@@ -10,7 +10,7 @@ $smarty->assign('cats_gallery', $cats_gallery);
 $smarty->assign('all_cats', $all_cats);
 
 //判断来源
-$notice_1="";
+$notice_1="玩的开心";
 $notice_2="";
 if(isset($_SESSION['step']) & strpos($_SESSION['step'],'orward')){
 	$_SESSION['step'] = 'forward_index';
