@@ -14,7 +14,7 @@ $notice_1="";
 $notice_2="";
 if(isset($_SESSION['step']) & strpos($_SESSION['step'],'orward')){
 	$_SESSION['step'] = 'forward_index';
-	if(is_forbiden_ip()){
+	/*if(is_forbiden_ip()){
 		$notice_1="为支持本站,请大家多点击一下本站页面.";
 	}else{
 		if(rand(1,10)<=2){
@@ -23,7 +23,7 @@ if(isset($_SESSION['step']) & strpos($_SESSION['step'],'orward')){
 		}else{
 			$notice_1="为支持本站,请大家多点击一下本站页面.";
 		}
-	}
+	}*/
 }
 $smarty->assign('notice_1', $notice_1);
 $smarty->assign('notice_2', $notice_2);
