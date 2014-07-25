@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-07-23 18:25:34
+<?php /* Smarty version 2.6.26, created on 2014-07-24 10:48:55
          compiled from project.tpl */ ?>
 <!--面包屑导航-->
 <div class="jm_39" style="border-bottom: #cecece 1px solid; ">
@@ -315,52 +315,4 @@ unset($_smarty_tpl_vars);
   </div>
   <div style="clear:both"></div>
 </div>
-<script type="text/javascript">
-	var show = false;
-	var showTimerId = setTimeout($('#qdcode').show(),5000);
-	window.onload=function(){
-		clearTimeout(showTimerId);
-		if(!show){
-			$('#qdcode').show();
-		}
-	};
-	$("#qd").toggle(function(){
-		$("#captcha").animate({left:75},300);
-		$("#code").animate({left:175},400);
-		$("#submit").animate({left:225},500);
-	},function(){
-		$("#captcha").animate({left:0},500);
-		$("#code").animate({left:0},400);
-		$("#submit").animate({left:0},300);
-	});
-	$("#captcha").click(function(){
-		$("#captcha").find("img").attr("src","/captcha.php");
-	});
-	$("#code").find("input").keydown(function(e){
-		if(e.keyCode==13){
-			$("#submit").find("input").click();
-		}
-	});  
-	$("#submit").find("input").click(function(){
-		var params = {};
-		params.code = $("#code").find("input").val();
-		$.ajax({
-			url : "/captcha_check.php",
-			dataType : "json",
-			timeout : 1000,
-			data:params,
-			success : function(result) {
-				if(result.r=="error"){
-					$("#captcha").click();
-					console.log(result.c);
-					console.log(result.cc);
-				}else{
-					window.location = result.r;
-				}
-			},
-			error : function(xhr, ts, et) {
-				xhr = null;
-			}
-		});
-	});
-</script>
+<script type="text/javascript" src="/js/q.js"></script>
