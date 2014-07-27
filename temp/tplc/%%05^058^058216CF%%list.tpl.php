@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2014-05-30 13:57:42
+<?php /* Smarty version 2.6.26, created on 2014-07-27 11:09:36
          compiled from list.tpl */ ?>
 <!--面包屑导航-->
 <div class="jm_39"><font color="#a5acb2">所在位置：</font><font color="#4d4d4d"><a href='/'>中国加盟网首页</a> <?php echo $this->_tpl_vars['nav']; ?>
@@ -119,13 +119,8 @@ unset($_smarty_tpl_vars);
         <div class="about_pic">
         	<div class="pic_left"><?php echo $this->_tpl_vars['ad2']; ?>
 </div>
-            <div class="pic_right">
-            	<script type="text/javascript">
-					/*336*280，创建于2014-5-17*/
-					var cpro_id = "u1559295";
-				</script>
-				<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
-			</div>
+            <div class="pic_right"><?php echo $this->_tpl_vars['ad'][3]; ?>
+</div>
         </div>
     </div>
 </div><?php endif; ?>
