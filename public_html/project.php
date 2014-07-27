@@ -15,9 +15,8 @@ if($info == FALSE){
 $nav = " <font color='#a5acb2'>&gt;</font> <font color='#4d4d4d'><a href='/c$info[parent_id]/'>$info[parent_name]</a> &gt; <a href='/c$info[cat_id]/'>$info[cat_name]</a> &gt; $info[name]</a></font>";
 
 assign_page(generateMeta('project', $info['name']));
-
 $images = $PROJECT->getPics($id);
-
+$info['description'] = preg_replace('/<img.*src=\"http:\/\/photo.jmw.com.cn\/pic\/[^>]*\/>/', '', $info['description']);
 $smarty->assign('images', $images);
 $smarty->assign('info', $info);
 $smarty->assign('nav', $nav);
