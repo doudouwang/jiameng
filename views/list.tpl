@@ -79,7 +79,13 @@
 	<div class="about_bg">
         <div class="about_pic">
         	<div class="pic_left"><{$ad2}></div>
-            <div class="pic_right"><{$ad[3]}></div>
+            <div class="pic_right">
+            	<script type="text/javascript">
+					/*336*280，创建于2014-5-17*/
+					var cpro_id = "u1559295";
+				</script>
+				<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+			</div>
         </div>
     </div>
 </div><{/if}>

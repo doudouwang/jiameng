@@ -14,7 +14,6 @@ function assign_page($tpl = array()){
 	$smarty->assign('top_cats_options', $CAT->makeOptions($top_cats));
 	$smarty->assign('img_domain','http://img0.egou.com/0/club/jm');
 	$smarty->assign('date',date('YmdHi'));
-	$smarty->assign('ad', config_item('ad'));
 	$smarty->assign('forbiden_ip',is_forbiden_ip(get_real_ip()));
 	foreach($tpl as $k =>$v){
 		$smarty->assign($k, $v);
