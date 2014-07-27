@@ -16,7 +16,7 @@ $nav = " <font color='#a5acb2'>&gt;</font> <font color='#4d4d4d'><a href='/c$inf
 
 assign_page(generateMeta('project', $info['name']));
 $images = $PROJECT->getPics($id);
-$info['description'] = preg_replace('/<img.*src=\"http:\/\/photo.jmw.com.cn\/pic\/[^>]*\/>/', '', $info['description']);
+$info['description'] = preg_replace('/<img[^>]*\/>/', '', $info['description']);
 $smarty->assign('images', $images);
 $smarty->assign('info', $info);
 $smarty->assign('nav', $nav);
