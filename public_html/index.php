@@ -10,10 +10,11 @@ $smarty->assign('cats_gallery', $cats_gallery);
 $smarty->assign('all_cats', $all_cats);
 
 //判断来源
-$notice_1="玩的开心";
+$notice_1="";
 $notice_2="";
 if(isset($_SESSION['step']) & strpos($_SESSION['step'],'orward')){
 	$_SESSION['step'] = 'forward_index';
+	$notice_1="玩的开心";
 	/*if(is_forbiden_ip()){
 		$notice_1="为支持本站,请大家多点击一下本站页面.";
 	}else{
