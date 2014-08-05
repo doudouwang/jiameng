@@ -48,17 +48,7 @@ $config['ad'][2]="<script type=\"text/javascript\"><!--
 		<script type=\"text/javascript\"
 		src=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">
 		</script>";
-$config['ad'][3]="<script type=\"text/javascript\">
-     document.write('<a style=\"display:none!important\" id=\"tanx-a-mm_16546936_2394582_23910548\"></a>');
-     tanx_s = document.createElement(\"script\");
-     tanx_s.type = \"text/javascript\";
-     tanx_s.charset = \"gbk\";
-     tanx_s.id = \"tanx-s-mm_16546936_2394582_23910548\";
-     tanx_s.async = true;
-     tanx_s.src = \"http://p.tanx.com/ex?i=mm_16546936_2394582_23910548\";
-     tanx_h = document.getElementsByTagName(\"head\")[0];
-     if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
-		</script>";
+$config['ad'][3]="<script type='text/javascript' charset='gb2312' src='http://js.adm.cnzz.net/s.php?sid=265834'></script>";
 
 
 $config['index'][0]="<script language=\"javascript\" type=\"text/javascript\">
