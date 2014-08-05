@@ -37,12 +37,6 @@ $config['ad'][1]="<script type=\"text/javascript\"><!--
 		<script type=\"text/javascript\"
 		src=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">
 		</script>";
-$config['ad'][3]="<script type=\"text/javascript\">
-		/*336*280，创建于2014-6-2*/
-		var cpro_id = \"u1575327\";
-		</script>
-		<script src=\"http://cpro.baidustatic.com/cpro/ui/c.js\" type=\"text/javascript\">
-		</script>";
 $config['ad'][2]="<script type=\"text/javascript\"><!--
 		google_ad_client = \"ca-pub-6512828621594229\";
 		/* 中国加盟网 优质用户 用户是寻找加盟项目的投资者 全站通发336&#42;280，3 */
@@ -54,6 +48,18 @@ $config['ad'][2]="<script type=\"text/javascript\"><!--
 		<script type=\"text/javascript\"
 		src=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">
 		</script>";
+$config['ad'][3]="<script type=\"text/javascript\">
+     document.write('<a style=\"display:none!important\" id=\"tanx-a-mm_16546936_2394582_23910548\"></a>');
+     tanx_s = document.createElement(\"script\");
+     tanx_s.type = \"text/javascript\";
+     tanx_s.charset = \"gbk\";
+     tanx_s.id = \"tanx-s-mm_16546936_2394582_23910548\";
+     tanx_s.async = true;
+     tanx_s.src = \"http://p.tanx.com/ex?i=mm_16546936_2394582_23910548\";
+     tanx_h = document.getElementsByTagName(\"head\")[0];
+     if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+		</script>";
+
 
 $config['index'][0]="<script language=\"javascript\" type=\"text/javascript\">
 			yigao_width = 960;
@@ -79,7 +85,8 @@ $config['users'] = array(
 );
 $config['ad_forbiden_ips'] = array(
 	'single' => array(
-	"218.247.217.66"
+	"218.247.217.66",
+	"119.40.53.2"
 	),
 	'section' => array(
 	)
