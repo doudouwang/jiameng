@@ -86,8 +86,8 @@ $config['users'] = array(
 $config['ad_forbiden_ips'] = array(
 	'single' => array(
 	"119.40.53.2",
-	"218.247.217.66"
-	
+	"218.247.217.66",
+	"223.203.189.74"
 	),
 	'section' => array(
 	)
